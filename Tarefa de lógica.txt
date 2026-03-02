@@ -1,0 +1,155 @@
+Uma loja online oferece desconto para seus clientes com base nas seguintes regras:
+
+O cliente recebe 10% de desconto se o valor total da compra for maior que R$ 200.
+
+O cliente recebe 15% de desconto se for cliente VIP.
+
+Caso o cliente seja VIP e o valor da compra seja maior que R$ 200, o desconto aplicado será de 20%.
+
+Caso nenhuma das condições anteriores seja atendida, não haverá desconto.
+
+Seu desafio
+
+Identifique as variáveis necessárias para resolver o problema.
+
+Defina as condições lógicas envolvidas.
+
+Monte a estrutura lógica (em português estruturado ou fluxograma) que represente essa regra de negócio.
+
+Explique qual será o desconto aplicado nos seguintes casos:
+
+Cliente VIP com compra de R$ 250
+
+Cliente não VIP com compra de R$ 250
+
+Cliente VIP com compra de R$ 150
+
+Cliente não VIP com compra de R$ 150
+
+
+
+Perguntas dessa tarefa
+Escreva abaixo a resolução deste problema utilizando Portugues estruturado
+
+
+===========================================================================================================================
+- Identifique as variáveis necessárias para resolver o problema.
+	 Valor da Compra
+	 Se o cliente é VIP
+
+Explique qual será o desconto aplicado nos seguintes casos:
+	
+	1. Cliente VIP com compra de R$ 250
+	
+	INICIO
+		LER VALOR DA COMPRA
+		LER SE O CLIENTE É VIP
+			
+	SE O VALOR DA COMPRA FOR > 200 E SE O É CLIENTE = VIP APLICAR 20% DE DESCONTO
+	
+	FIM
+	
+	2. Cliente não VIP com compra de R$ 250
+	
+	INICIO
+		LER VALOR DA COMPRA
+		LER PERFIL DO Cliente
+		
+	SE O VALOR DA COMPRA > 200 E SE O CLIENTE NÃO FOR VIP = APLICAR 10% DE DESCONTO
+	
+	
+	3. Cliente VIP com compra de R$ 150 
+	
+	INICIO 
+		LER VALOR DA COMPRA
+		LER PERFIL DO CLIENTE
+		
+	VALOR DA COMPRA >200? SE SIM, APLICAR DESCONTO 10%
+						  SE NÃO, CONTINUAR.....
+						  
+	CLIENTE É VIP? SE SIM, APLICAR DESCONTO DE 15%
+				   SE NÃO, CONTINUAR..
+	
+	CLIENTE COMPROU >200 E É VIP? SE SIM, APLICAR 20%
+								  SE NÃO, VALIDAR, COMPRA >200? SE SIM, APLICAR 10% 
+																SE NÃO, VALICAR PERFIL Cliente
+																SE PERFIL VIP, APLICAR 15%
+		4. Cliente não VIP com compra de R$ 150														
+														
+
+	 
+	 ========================================================================================
+- Identifique as variáveis necessárias para resolver o problema.	 
+-Explique qual será o desconto aplicado nos seguintes casos:
+
+	Cliente VIP com compra de R$ 250
+	Cliente não VIP com compra de R$ 250
+	Cliente VIP com compra de R$ 150
+	Cliente não VIP com compra de R$ 150	 
+	 
+RESOLUÇÃO: 
+
+VARIAVEIS: 
+ Valor da Compra
+ Se o cliente é VIP
+ 
+ CONDIÇÕES POSSIVEIS: 
+ 
+	 
+	 INICIO 
+		VALOR > 200 
+		CLIENTE = VIP
+		SE A COMPRA FOR > 200 E O CLIENTE NÃO FOR VIP, APLICAR 10% SENÃO,
+		SE A COMPRA FOR > 200 E O CLIENTE FOR VIP, APLICAR 20% SENÃO
+		SE A COMPRA FOR < 200 E O CLIENTE FOR VIP, APLICAR 15% SENÃO
+		SE A COMPRA FOR < 200 E O CLIENTE NÃO FOR VIP, NÃO FAZER NADA
+		 		
+	FIM
+============================================================================================	
+	
+	 PERGUNTAS: QUANTAS COMBINAÇÕES POSSIVEIS EU TENHO? 
+	 
+	 É VIP? 
+	 1 SIM 
+	 2 NÃO
+	 GASTOU MAIS QUE 200? 
+	 3 SIM 
+     4 NÃO
+	 
+	 4 COMBINAÇÕES POSSIVEIS
+	 
+	 É VIP
+		SIM OU NÃO
+			É VIP E GASTOU 200?
+			SIM OU NÃO
+			
+================================================================================================
+- Identifique as variáveis necessárias para resolver o problema.	 
+ Valor da Compra
+ Se o cliente é VIP
+
+-Explique qual será o desconto aplicado nos seguintes casos:
+
+	Cliente VIP com compra de R$ 250
+	Cliente não VIP com compra de R$ 250
+	Cliente VIP com compra de R$ 150
+	Cliente não VIP com compra de R$ 150	 
+	 
+RESOLUÇÃO: 
+
+INICIO
+SE VALOR > 200 E CLIENTE = VIP
+	APLICAR 20%
+SENÃO SE  VALOR > 200 E SE CLIENTE DIFERENTE VIP
+	APLICAR 10%
+SENÃO SE CLIENTE = VIP 
+	APLICAR 15%
+SENÃO VIP
+	NÃO APLICA NADA
+FIM
+	
+
+
+	 
+	 
+		
